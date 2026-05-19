@@ -4,73 +4,97 @@ export default function ProjectsPage() {
     {
       name: "TOQUO",
       category: "Hospitality",
-      location: "Nagpur",
-      image: "/images/hero-main.jpg",
+      location: "Premium Hospitality Execution",
+      image: "/projects/toquo/toquo-01.jpg",
       logo: "/brands/toquo-logo.png",
     },
 
     {
       name: "Rasta",
       category: "Hospitality",
-      location: "Hyderabad",
-      image: "/images/hero-main.jpg",
+      location: "Restaurant & Lounge Experience",
+      image: "/projects/rasta/rasta-01.jpg",
       logo: "/brands/rasta-logo.png",
     },
 
     {
-      name: "Jamun Restaurant",
-      category: "Restaurant",
-      location: "Jubilee Hills, Hyderabad",
-      image: "/images/hero-main.jpg",
-      logo: "/brands/jamun-logo.png",
-    },
-
-    {
-      name: "Dasara Fine Dining",
-      category: "Restaurant",
-      location: "Hyderabad",
-      image: "/images/hero-main.jpg",
-      logo: "/brands/dasara-logo.png",
-    },
-
-    {
       name: "Kefi",
-      category: "Café",
-      location: "Nagole, Hyderabad",
-      image: "/images/hero-main.jpg",
+      category: "Café & Hospitality",
+      location: "Modern Café Environment",
+      image: "/projects/kefi/kefi-01.jpg",
       logo: "/brands/kefi-logo.png",
     },
 
     {
-      name: "Ario Café",
-      category: "Café",
-      location: "Banjara Hills, Hyderabad",
-      image: "/images/hero-main.jpg",
-      logo: "/brands/ario-logo.png",
+      name: "Jamun",
+      category: "Restaurant Interiors",
+      location: "Premium Dining Space",
+      image: "/projects/jamun/jamun-01.jpg",
+      logo: "/brands/jamun-logo.png",
+    },
+
+    {
+      name: "Dasara",
+      category: "Hospitality",
+      location: "Fine Dining Experience",
+      image: "/projects/dasara/dasara-01.jpg",
+      logo: "/brands/dasara-logo.png",
     },
 
     {
       name: "Reserve Bank of India",
       category: "Commercial",
-      location: "Hyderabad",
-      image: "/images/hero-main.jpg",
+      location: "Institutional Workspace",
+      image: "/projects/rbi/rbi-01.jpg",
       logo: "/brands/rbi-logo.png",
+    },
+
+    {
+      name: "Ascendas",
+      category: "Commercial",
+      location: "Corporate Environment",
+      image: "/projects/ascendas/ascendas-01.jpg",
+      logo: "/brands/ascendas-logo.png",
+    },
+
+    {
+      name: "Flipspaces",
+      category: "Workspace Solutions",
+      location: "Commercial Interiors",
+      image: "/projects/flipspaces/flipspaces-01.jpg",
+      logo: "/brands/flipspaces-logo.png",
+    },
+
+    {
+      name: "UTK",
+      category: "Commercial",
+      location: "Execution & Furnishing",
+      image: "/projects/utk/utk-01.jpg",
+      logo: "/brands/utk-logo.png",
+    },
+
+    {
+      name: "Neovantage",
+      category: "Corporate Interiors",
+      location: "Workspace Execution",
+      image: "/projects/neovantage/neovantage-01.jpg",
+      logo: "/brands/neovantage-logo.png",
     },
 
     {
       name: "Bajaj Electronics",
       category: "Retail",
-      location: "Hyderabad",
-      image: "/images/hero-main.jpg",
+      location: "Retail Experience",
+      image: "/projects/bajaj/bajaj-01.jpg",
       logo: "/brands/bajaj-logo.png",
     },
 
     {
-      name: "Flipspaces",
-      category: "Commercial",
-      location: "Hyderabad",
-      image: "/images/hero-main.jpg",
-      logo: "/brands/flipspaces-logo.png",
+      name: "Airo",
+      category: "Wellness & Specialty",
+      location: "Custom Interior Environment",
+      image: "/projects/airo/airo-01.jpg",
+      logo: "/brands/airo-logo.png",
     },
   ];
 
@@ -94,9 +118,9 @@ export default function ProjectsPage() {
           </h1>
 
           <p className="text-gray-700 text-lg md:text-xl leading-relaxed max-w-4xl">
-            A curated showcase of hospitality, commercial,
-            retail and bespoke furniture execution projects
-            across diverse environments.
+            A curated portfolio of hospitality, commercial,
+            retail and bespoke interior execution projects
+            crafted across evolving environments.
           </p>
 
         </div>
@@ -107,7 +131,7 @@ export default function ProjectsPage() {
 
       <section className="px-6 md:px-20 pb-24">
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-10">
 
           {projects.map((project, index) => (
 
@@ -116,14 +140,14 @@ export default function ProjectsPage() {
               className="bg-white rounded-[36px] overflow-hidden shadow-xl hover:-translate-y-2 transition duration-500"
             >
 
-              {/* PROJECT IMAGE */}
+              {/* IMAGE */}
 
-              <div className="relative">
+              <div className="relative overflow-hidden">
 
                 <img
                   src={project.image}
                   alt={project.name}
-                  className="h-[320px] w-full object-cover"
+                  className="h-[340px] w-full object-cover"
                 />
 
                 {/* CATEGORY */}
@@ -142,7 +166,7 @@ export default function ProjectsPage() {
 
                 {/* LOGO */}
 
-                <div className="h-14 flex items-center mb-6">
+                <div className="h-16 flex items-center mb-6">
 
                   <img
                     src={project.logo}
@@ -154,13 +178,13 @@ export default function ProjectsPage() {
 
                 {/* TITLE */}
 
-                <h2 className="text-3xl font-semibold mb-3">
+                <h2 className="text-3xl font-semibold mb-3 leading-tight">
                   {project.name}
                 </h2>
 
                 {/* LOCATION */}
 
-                <p className="text-[#7ED321] font-semibold mb-5 tracking-[2px] uppercase text-sm">
+                <p className="text-[#7ED321] font-semibold tracking-[2px] uppercase text-sm mb-5">
 
                   {project.location}
 
@@ -169,8 +193,8 @@ export default function ProjectsPage() {
                 {/* DESCRIPTION */}
 
                 <p className="text-gray-700 leading-relaxed">
-                  Bespoke interior and furniture execution
-                  tailored around functionality, detailing
+                  Bespoke furniture and interior execution
+                  tailored around detailing, functionality
                   and spatial experience.
                 </p>
 
