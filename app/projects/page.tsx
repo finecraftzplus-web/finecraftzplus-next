@@ -42,19 +42,19 @@ export default function ProjectsPage() {
     },
 
     {
+      name: "Creamery",
+      category: "Hospitality",
+      location: "Dessert & Café Experience",
+      image: "/projects/creamery/creamery-01.jpg",
+      logo: "/brands/creamery-logo.png",
+    },
+
+    {
       name: "Reserve Bank of India",
       category: "Commercial",
       location: "Institutional Workspace",
       image: "/projects/rbi/rbi-01.jpg",
       logo: "/brands/rbi-logo.png",
-    },
-
-    {
-      name: "Ascendas",
-      category: "Commercial",
-      location: "Corporate Environment",
-      image: "/projects/ascendas/ascendas-01.jpg",
-      logo: "/brands/ascendas-logo.png",
     },
 
     {
@@ -166,25 +166,25 @@ export default function ProjectsPage() {
 
                 {/* LOGO */}
 
-                <div className="h-16 flex items-center mb-6">
+                <div className="h-24 flex items-center justify-center mb-6">
 
                   <img
                     src={project.logo}
                     alt={project.name}
-                    className="max-h-12 w-auto object-contain"
+                    className="max-h-20 w-auto object-contain"
                   />
 
                 </div>
 
                 {/* TITLE */}
 
-                <h2 className="text-3xl font-semibold mb-3 leading-tight">
+                <h2 className="text-3xl font-semibold mb-3 leading-tight text-center">
                   {project.name}
                 </h2>
 
                 {/* LOCATION */}
 
-                <p className="text-[#7ED321] font-semibold tracking-[2px] uppercase text-sm mb-5">
+                <p className="text-[#7ED321] font-semibold tracking-[2px] uppercase text-sm mb-5 text-center">
 
                   {project.location}
 
@@ -192,7 +192,7 @@ export default function ProjectsPage() {
 
                 {/* DESCRIPTION */}
 
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-gray-700 leading-relaxed text-center">
                   Bespoke furniture and interior execution
                   tailored around detailing, functionality
                   and spatial experience.
